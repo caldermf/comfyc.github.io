@@ -1,0 +1,238 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>DeepWorldClock &#x1F30E;&#x23F1;</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
+	</head>
+	<body style="background-color:#EAE7DC">
+		<style>
+			* {
+			font-family: "Oswald", "sans-serif";
+			}
+			div {
+			text-align: center;
+			margin-top: 10px;
+			margin: 10px auto;
+			}
+			h1 {
+			color: #E85A4F;
+			font-size: 28pt;
+			}
+			h2 {
+			color: #8E8D8A;
+			font-size: 15pt;
+			}
+			p {
+			color: #E98074;
+			font-size: 26pt;
+			}
+			img {
+			border-radius: 50%;
+			width : 150px;
+			height: auto;
+			}
+			.container {
+			margin:0 auto;
+			position:relative;
+			text-align:center;
+			width:92%;
+			display: flex;
+			flex-flow: row wrap;
+			}
+			.column {
+			float: left;
+			width: 340px;
+			margin: 22px;
+			}
+			/* Clear floats after the columns */
+			.row:after {
+			content: "";
+			display: table;
+			clear: both;
+			}
+		</style>
+		<h1 style="text-align: center;padding-top: 40px"><b>WELCOME TO THE DEEP WORLD CLOCK!</b></h1>
+		<h2 style="color:#8E8D8A;text-align: center;margin-left:20%;margin-right:20%"> DEEP WORK: Professional activities performed in a state of distraction-free concentration that push your cognitive capabilities to their limit. These efforts create new value, improve your skill, and are hard to replicate.</h2>
+		<script src="app.js">
+		</script>
+		<div class="container">
+			<div class="flip-card" id="pcalder">
+				<div class="flip-card-inner">
+    					<div class="offcard-front">
+      						<h1>Calder</h1>
+						<img src="static/images/calder-dp.png" loading="lazy" alt="Calder">
+						<h2>Cambridge, MA</h2>
+						<p id="calder"></p>
+    					</div>
+   			 		<div class="offcard-back">
+      						<h1>Calder</h1>
+      						<p style="font-size:22px; margin:5px">Calder is the founder and CEO of the Deep World Clock. He enjoys doing insane amounts of deep work, eating free food, and "git push"ing incremental DWC updates to "heroku main" multiple times per day.</p>
+    					</div>
+  				</div>
+			</div>
+
+			<div class="flip-card" id="ptanny">
+				<div class="flip-card-inner">
+    					<div class="offcard-front">
+      						<h1>Tanny</h1>
+						<img src="static/images/tanny-dp.png" loading="lazy" alt="Tanny">
+						<h2>San Diego, CA</h2>
+						<p id="tanny"></p>
+    					</div>
+   			 		<div class="offcard-back">
+      						<h1>Tanny</h1>
+      						<p style="font-size:22px; margin:5px">Tanny is a graduate student studying deep and beautiful. He grew up in a small town outside of New York City and enjoys pok&eacute; bowls and rock climbing.</p>
+    					</div>
+  				</div>
+			</div>
+			<div class="flip-card" style="display:none">
+				<div class="flip-card-inner">
+    					<div class="offcard-front">
+      						<h1>Natalia</h1>
+						<img src="static/images/nat-dp.png" loading="lazy" alt="Natalia">
+						<h2>Cambridge, MA</h2>
+						<p id="natalia"></p>
+    					</div>
+   			 		<div class="offcard-back">
+      						<h1>Natalia</h1>
+      						<p style="font-size:20px; margin:5px">Natalia is a beastly algebraic topologist, artist, fluent Chinese speaker, web developer, and Deep Worker. Despite abandoning the squad for weeks on end to attend hundreds of conferences around the world, she remains a respected member of the DWC community.</p>
+    					</div>
+  				</div>
+			</div>
+			<div class="flip-card" id="pdavid">
+				<div class="flip-card-inner">
+    					<div class="offcard-front">
+      						<h1>David</h1>
+						<img src="static/images/david-dp.png" loading="lazy" alt="David">
+						<h2>Auckland, NZ</h2>
+						<p id="david"></p>
+    					</div>
+   			 		<div class="offcard-back">
+      						<h1>David</h1>
+      						<p style="font-size:20px; margin:5px">David is a rock climber and mathematician hailing from Auckland, New Zealand. He spends lots of time "doing some thinkings" about various depressy topics during the day. But "by night", he beasts Deep Work in a way which inspires us all, trying his very best to "beat" Jar.</p>
+    					</div>
+  				</div>
+			</div>
+			<div class="flip-card" id="pjar">
+				<div class="flip-card-inner">
+    					<div class="offcard-front">
+      						<h1>Jar</h1>
+						<img src="static/images/jar-dp.png" loading="lazy" alt="Jar">
+						<h2>Evanston, IL</h2>
+						<p id="jar"></p>
+    					</div>
+   			 		<div class="offcard-back">
+      						<h1>Jar</h1>
+      						<p style="font-size:20px; margin:5px">Jar, a god-tier mathematician based in Evanston, IL (the mayor of whomst's name is Sir Daniel Biss), is a master of historical European martial arts. His mathematical interests are deep and varied, and he is known for his 6 hours of daily deep work paired with 0 complaints.</p>
+    					</div>
+  				</div>
+			</div>
+			<div class="flip-card" id="psidd">
+				<div class="flip-card-inner">
+    					<div class="offcard-front">
+      						<h1>SiddBox</h1>
+						<img src="static/images/sidd-dp.png" loading="lazy" alt="Sidd">
+						<h2>Boston, MA</h2>
+						<p id="sidd"></p>
+    					</div>
+   			 		<div class="offcard-back">
+      						<h1>SiddBox</h1>
+      						<p style="font-size:20px; margin:5px">SiddBox is a gentleman, scholar, and accomplished "rocket scientist"/satellite designer who loves cracking out on Langlands-theoretic number theory. After almost a year of frequenting the climbing gym, he recently learned to belay toprope.</p>
+    					</div>
+  				</div>
+			</div>
+			<div class="flip-card" id="pmatthew">
+				<div class="flip-card-inner">
+    					<div class="offcard-front">
+      						<h1>Matthew</h1>
+						<img src="static/images/matthew-dp.png" loading="lazy" alt="Matthew">
+						<h2>Cambridge, MA</h2>
+						<p id="matthew"></p>
+    					</div>
+   			 		<div class="offcard-back">
+      						<h1>Matthew</h1>
+      						<p style="font-size:20px; margin:5px">Matthew is a degenerate savage mathematician. He doesn't use a calendar, but still manages to rack up the deep work hours from dusk until dawn cracking out on integrable probability and statistical mechanics. When not clocked in on the DWC, Matthew enjoys kickboxing and hitting the gym.</p>
+    					</div>
+  				</div>
+			</div>
+			<div class="flip-card" id="palex">
+				<div class="flip-card-inner">
+    					<div class="offcard-front">
+      						<h1>Alex</h1>
+						<img src="static/images/alex-dp.png" loading="lazy" alt="Alex">
+						<h2>Cambridge, MA</h2>
+						<p id="alex"></p>
+    					</div>
+   			 		<div class="offcard-back">
+      						<h1>Alex</h1>
+      						<p style="font-size:22px; margin:5px">Alex's bio has not yet been set. Please send Calder a message to set it!</p>
+    					</div>
+  				</div>
+			</div>
+			<div class="flip-card" id="panna">
+				<div class="flip-card-inner">
+    					<div class="offcard-front">
+      						<h1>Anna</h1>
+						<img src="static/images/anna-dp.png" loading="lazy" alt="Anna">
+						<h2>Berkeley, CA</h2>
+						<p id="anna"></p>
+    					</div>
+   			 		<div class="offcard-back">
+      						<h1>Anna</h1>
+      						<p style="font-size:22px; margin:5px">Anna's bio has not yet been set. Please send Calder a message to set it!</p>
+    					</div>
+  				</div>
+			</div>
+			<div class="flip-card" id="pmarisa">
+				<div class="flip-card-inner">
+    					<div class="offcard-front">
+      						<h1>Marisa</h1>
+						<img src="static/images/marisa-dp.png" loading="lazy" alt="Marisa">
+						<h2>Cambridge, MA</h2>
+						<p id="marisa"></p>
+    					</div>
+   			 		<div class="offcard-back">
+      						<h1>Marisa</h1>
+      						<p style="font-size:22px; margin:5px">Marisa has not yet set a bio.</p>
+    					</div>
+  				</div>
+			</div>
+
+			<div class="flip-card" id="palvaro">
+				<div class="flip-card-inner">
+    					<div class="offcard-front">
+      						<h1>Alvaro</h1>
+						<img src="static/images/alvaro-dp.png" loading="lazy" alt="Alvaro">
+						<h2>New York, NY</h2>
+						<p id="alvaro"></p>
+    					</div>
+   			 		<div class="offcard-back">
+      						<h1>Alvaro</h1>
+      						<p style="font-size:22px; margin:5px">Alvaro has not yet set a bio.</p>
+    					</div>
+  				</div>
+			</div>
+			
+			<div class="flip-card" id="pmavis">
+				<div class="flip-card-inner">
+    					<div class="offcard-front">
+      						<h1>Mavis</h1>
+						<img src="static/images/mavis-dp.jpeg" loading="lazy" alt="Mavis">
+						<h2>Guelph, ON</h2>
+						<p id="mavis"></p>
+    					</div>
+   			 		<div class="offcard-back">
+      						<h1>Mavis</h1>
+      						<p style="font-size:22px; margin:5px">Dr. Mavis Morton, a professor in the department of sociology and anthropology at the University of Guelph, is the mother of the CEO of the Deep World Clock. She also once pitched a perfect game in softball when she was a teenager.</p>
+    					</div>
+  				</div>
+			</div>
+		</div>
+		</div>
+		<br><br><br><br><br>
+	</body>
+</html>
